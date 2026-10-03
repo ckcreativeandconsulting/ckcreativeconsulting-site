@@ -3,9 +3,28 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="CK Creative and Consulting LLC is an independent software and creative studio building thoughtful, privacy-focused apps and digital products." />
+  <meta name="description" content="CK Creative and Consulting LLC is the company behind independently developed apps including Local Journal and Schedjoy." />
   <link rel="canonical" href="https://ckcreativeconsulting.com/" />
-  <title>CK Creative and Consulting LLC | Independent Software Studio</title>
+  <title>CK Creative and Consulting LLC | Independent Apps</title>
+  <meta property="og:title" content="CK Creative and Consulting LLC" />
+  <meta property="og:description" content="The company behind independently developed apps including Local Journal and Schedjoy." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://ckcreativeconsulting.com/" />
+  <meta property="og:image" content="https://ckcreativeconsulting.com/app-icon.jpg" />
+  <meta name="twitter:card" content="summary" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "CK Creative and Consulting LLC",
+    "url": "https://ckcreativeconsulting.com/",
+    "email": "ckcreativeandconsulting@gmail.com",
+    "sameAs": [
+      "https://localjournal.app",
+      "https://schedjoy.com"
+    ]
+  }
+  </script>
 
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-X0YKFRS068"></script>
@@ -269,6 +288,8 @@
       align-items: center;
     }
 
+    .app-card + .app-card { margin-top: 1.5rem; }
+
     .app-icon {
       width: 80px;
       height: 80px;
@@ -431,6 +452,7 @@
       text-decoration: none;
       font-size: 0.95rem;
       transition: color 0.2s;
+      overflow-wrap: anywhere;
     }
 
     .contact-item a:hover { color: var(--white); }
@@ -480,6 +502,13 @@
       .app-card { grid-template-columns: 1fr; gap: 2.5rem; }
       .privacy-grid { grid-template-columns: 1fr; }
     }
+
+    @media (max-width: 640px) {
+      nav { justify-content: center; }
+      .nav-links { display: none; }
+      .nav-logo { font-size: 1.05rem; }
+      .contact-item { align-items: flex-start; flex-direction: column; gap: 0.35rem; }
+    }
   </style>
 </head>
 <body>
@@ -490,7 +519,7 @@
     <ul class="nav-links">
       <li><a href="#about">About</a></li>
       <li><a href="#apps">Apps</a></li>
-      <li><a href="#privacy">Privacy</a></li>
+      <li><a href="#support">Support</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
   </nav>
@@ -499,11 +528,11 @@
   <section id="hero">
     <div class="container">
       <div class="hero-eyebrow">CK Creative and Consulting LLC</div>
-      <h1>Independent software studio building <em>privacy-first</em> digital products</h1>
-      <p class="hero-sub">We design and develop thoughtful applications that respect user privacy, work beautifully, and solve real problems. Based in California.</p>
+      <h1>The company behind independently developed apps</h1>
+      <p class="hero-sub">CK Creative and Consulting LLC maintains a small portfolio of apps, including Local Journal and Schedjoy, with support and policy information for users.</p>
       <div class="btn-group">
-        <a href="#apps" class="btn btn-primary">Our Apps</a>
-        <a href="#contact" class="btn btn-outline">Get in Touch</a>
+        <a href="#apps" class="btn btn-primary">View Apps</a>
+        <a href="#support" class="btn btn-outline">Support</a>
       </div>
     </div>
   </section>
@@ -514,23 +543,23 @@
       <div class="section-label">About</div>
       <div class="about-grid">
         <div class="about-text">
-          <h2>A studio built on craft and <em style="font-style:italic; color:var(--gold);">integrity</em></h2>
-          <p>CK Creative and Consulting LLC is an independent software and creative studio founded in California. We develop privacy-focused applications and creative digital products — built with care, shipped with intention.</p>
-          <p>We believe software should <strong>work for users, not against them</strong>. That means no dark patterns, no unnecessary data collection, and no compromises on quality.</p>
-          <p>Every product we build starts with a real problem and ends with a solution that respects the people using it.</p>
+          <h2>A small app company with a focus on useful products</h2>
+          <p>CK Creative and Consulting LLC is the legal entity behind independently developed software products by Charles Kang.</p>
+          <p>This site is a simple company presence and a support entry point for existing apps.</p>
+          <p>Current app-specific support, privacy, terms, and data instructions remain available through each product's dedicated links.</p>
         </div>
         <div class="about-pillars">
           <div class="pillar">
-            <h3>Privacy First</h3>
-            <p>We collect only what's necessary and never sell user data. Your information stays yours.</p>
+            <h3>App Support</h3>
+            <p>Support channels remain in place for current apps and users.</p>
           </div>
           <div class="pillar">
-            <h3>Thoughtful Design</h3>
-            <p>Every interface decision is intentional. We build products people actually enjoy using.</p>
+            <h3>Product Policies</h3>
+            <p>Privacy policies, terms, and data instructions stay linked from the relevant product pages.</p>
           </div>
           <div class="pillar">
-            <h3>Real Problems</h3>
-            <p>We build tools we use ourselves — starting with genuine pain points, not trends.</p>
+            <h3>Independent Apps</h3>
+            <p>The company supports a focused portfolio of independently developed apps.</p>
           </div>
         </div>
       </div>
@@ -541,8 +570,8 @@
   <section id="apps">
     <div class="container">
       <div class="section-label">Our Apps</div>
-      <h2>What we've built</h2>
-      <p class="section-intro">Thoughtfully designed apps available on iOS and Android.</p>
+      <h2>Supported products</h2>
+      <p class="section-intro">Independent apps maintained by CK Creative and Consulting LLC.</p>
 
       <div class="app-card">
         <div class="app-info">
@@ -550,12 +579,13 @@
             <img src="app-icon.jpg" alt="Local Journal App Icon" style="width:100px; height:100px; border-radius:22px; display:block;" />
           </div>
           <h3>Local Journal</h3>
-          <div class="app-tagline">Voice-powered private journaling</div>
-          <p>Local Journal is a cross-platform journaling app that turns your voice into text — powered by AI, designed for privacy. Capture your thoughts naturally without typing, and keep everything stored locally on your device.</p>
+          <div class="app-tagline">Private, local-first journaling</div>
+          <p>Local Journal is a private journaling app for writing, search, export, and optional on-device voice transcription. Entries are stored locally on the user's device.</p>
           <div class="app-badges">
             <a href="https://apps.apple.com/us/app/local-journal-private-diary/id6760919814" class="badge" target="_blank">↗ App Store</a>
             <a href="https://play.google.com/store/apps/details?id=com.ckcreativeconsulting.local_journal" class="badge" target="_blank">↗ Google Play</a>
             <a href="https://localjournal.app" class="badge" style="background:var(--paper-warm); color:var(--ink);" target="_blank">↗ Website</a>
+            <a href="https://localjournal.app/support.html" class="badge" style="background:var(--paper-warm); color:var(--ink);" target="_blank">↗ Support</a>
           </div>
         </div>
         <div class="app-features">
@@ -563,28 +593,65 @@
             <div class="feature-dot"></div>
             <div class="feature-text">
               <h4>Voice to Text</h4>
-              <p>Powered by Whisper AI — speak naturally and your words are transcribed instantly.</p>
+              <p>Optional on-device English transcription for voice entries.</p>
             </div>
           </div>
           <div class="feature">
             <div class="feature-dot"></div>
             <div class="feature-text">
               <h4>Local First</h4>
-              <p>Your journal entries stay on your device. No cloud sync required, no data leaving your hands.</p>
+              <p>Journal entries stay on the user's device with no account required.</p>
             </div>
           </div>
           <div class="feature">
             <div class="feature-dot"></div>
             <div class="feature-text">
               <h4>Cross Platform</h4>
-              <p>Built with Flutter — works seamlessly on both iOS and Android with a native feel.</p>
+              <p>Available on iOS and Android.</p>
             </div>
           </div>
           <div class="feature">
             <div class="feature-dot"></div>
             <div class="feature-text">
               <h4>No Ads, Ever</h4>
-              <p>A clean journaling experience with no distractions, no tracking, no advertising.</p>
+              <p>No ads or third-party tracking in the app.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="app-card">
+        <div class="app-info">
+          <div class="app-icon">S</div>
+          <h3>Schedjoy</h3>
+          <div class="app-tagline">Lightweight group planning</div>
+          <p>Schedjoy helps people coordinate plans, collect availability, and choose a time without requiring participants to create accounts.</p>
+          <div class="app-badges">
+            <a href="https://schedjoy.com" class="badge" target="_blank">↗ Website</a>
+            <a href="https://schedjoy.com/privacy" class="badge" style="background:var(--paper-warm); color:var(--ink);" target="_blank">↗ Privacy</a>
+            <a href="mailto:charles@schedjoy.com" class="badge" style="background:var(--paper-warm); color:var(--ink);">Email Support</a>
+          </div>
+        </div>
+        <div class="app-features">
+          <div class="feature">
+            <div class="feature-dot"></div>
+            <div class="feature-text">
+              <h4>Plan Creation</h4>
+              <p>Create a plan and invite participants to share availability.</p>
+            </div>
+          </div>
+          <div class="feature">
+            <div class="feature-dot"></div>
+            <div class="feature-text">
+              <h4>Event Links</h4>
+              <p>Shared event and dashboard URLs remain part of the product experience.</p>
+            </div>
+          </div>
+          <div class="feature">
+            <div class="feature-dot"></div>
+            <div class="feature-text">
+              <h4>Privacy Page</h4>
+              <p>Schedjoy's current privacy policy remains available at schedjoy.com/privacy.</p>
             </div>
           </div>
         </div>
@@ -592,29 +659,26 @@
     </div>
   </section>
 
-  <!-- PRIVACY -->
-  <section id="privacy">
+  <!-- SUPPORT -->
+  <section id="support">
     <div class="container">
-      <div class="section-label">Privacy</div>
-      <h2>Our commitment to your data</h2>
-      <p class="section-intro">Privacy isn't a feature — it's a foundation. Here's exactly how we handle your data across all CK Creative apps.</p>
+      <div class="section-label">Support & Policies</div>
+      <h2>Product support remains available</h2>
+      <p class="section-intro">For product-specific help, privacy policies, terms, and data instructions, use the links maintained for each app.</p>
       <div class="privacy-grid">
         <div class="privacy-card">
-          <h3>Data We Collect</h3>
-          <p>We collect only what's essential to operate the app — nothing more. For Local Journal, your entries are stored locally on your device and are never transmitted to our servers.</p>
+          <h3>Local Journal</h3>
+          <p><a href="https://localjournal.app/support.html" style="color:var(--accent);">Support</a> · <a href="https://localjournal.app/privacy.html" style="color:var(--accent);">Privacy</a> · <a href="https://localjournal.app/terms.html" style="color:var(--accent);">Terms</a></p>
         </div>
         <div class="privacy-card">
-          <h3>Data We Never Sell</h3>
-          <p>We do not sell, rent, or share your personal information with third parties for marketing purposes. Your data is not our product.</p>
+          <h3>Schedjoy</h3>
+          <p><a href="https://schedjoy.com/privacy" style="color:var(--accent);">Privacy</a> · <a href="mailto:charles@schedjoy.com" style="color:var(--accent);">Email support</a></p>
         </div>
         <div class="privacy-card">
-          <h3>Your Control</h3>
-          <p>You can delete your data at any time by uninstalling the app. For questions about your data or to request deletion, contact us directly at the email below.</p>
+          <h3>Company Contact</h3>
+          <p>For general company or app support questions, email <a href="mailto:ckcreativeandconsulting@gmail.com" style="color:var(--accent);">ckcreativeandconsulting@gmail.com</a>.</p>
         </div>
       </div>
-      <p style="margin-top:2rem; font-size:0.9rem; color:var(--ink-muted);">
-        For app-specific privacy policies, contact us at <a href="mailto:ckcreativeandconsulting@gmail.com" style="color:var(--accent);">ckcreativeandconsulting@gmail.com</a>. We will respond within 2 business days.
-      </p>
     </div>
   </section>
 
@@ -622,8 +686,8 @@
   <section id="contact">
     <div class="container">
       <div class="section-label">Contact</div>
-      <h2>Get in touch</h2>
-      <p class="section-intro">For support, privacy questions, press inquiries, or partnership opportunities.</p>
+      <h2>Contact</h2>
+      <p class="section-intro">For app support, privacy questions, or company correspondence.</p>
       <div class="contact-simple">
         <div class="contact-item">
           <span class="contact-item-label">Email</span>
@@ -639,14 +703,14 @@
         </div>
       </div>
       <div class="founder-note">
-        CK Creative and Consulting LLC is founded and operated by <a href="https://charleskang.com" target="_blank">Charles Kang</a> — an AI product leader and builder with deep roots in Fintech and SaaS. <a href="https://charleskang.com" target="_blank">Visit charleskang.com</a> to learn more about consulting and fractional product work.
+        CK Creative and Consulting LLC is founded and operated by <a href="https://charleskang.com" target="_blank">Charles Kang</a>.
       </div>
     </div>
   </section>
 
   <!-- FOOTER -->
   <footer>
-    <p>© 2025 <span>CK Creative and Consulting LLC</span> · California · <a href="mailto:ckcreativeandconsulting@gmail.com">ckcreativeandconsulting@gmail.com</a></p>
+    <p>© 2026 <span>CK Creative and Consulting LLC</span> · California · <a href="mailto:ckcreativeandconsulting@gmail.com">ckcreativeandconsulting@gmail.com</a></p>
   </footer>
 
 </body>
